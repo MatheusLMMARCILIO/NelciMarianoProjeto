@@ -15,6 +15,8 @@ import FormBooks from './pages/Books/form.js'
 import Menu from './components/Menu/menu.js'
 import MenuAdmin from './components/MenuAdmin/menu.js'
 import Nav from './components/Nav'
+import Footer from './components/footer/index.js'
+import MenuCardapio from './pages/MenuCardapio/index.js'
 
 import FormUserAdmin from './pages/Admin/User/form'
 
@@ -23,7 +25,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 export default function AppRoutes() {
     return (
         <BrowserRouter>
-        
+
             <Nav />
 
             <Routes>
@@ -37,10 +39,14 @@ export default function AppRoutes() {
                 <Route path="/books/form.js" element={<FormBooks />}> </Route>
                 <Route path="/students" element={<Students />}> </Route>
                 <Route path="/Students/cadastre.js" element={<StudentsCadastre />}> </Route>
+                <Route path="/MenuCardapio" element={<MenuCardapio />}> </Route>
 
                 <Route path="admin/user/form.js" element={<FormUserAdmin />}> </Route>
 
             </Routes>
+
+           <Footer />
+
         </BrowserRouter>
     )
 }

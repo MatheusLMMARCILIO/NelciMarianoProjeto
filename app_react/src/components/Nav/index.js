@@ -12,12 +12,13 @@ function BasicExample() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto ">
-            
+
             <Nav.Link className={styles.link} href="/">Home</Nav.Link>
             <Nav.Link className={styles.link} href="/music">Programação</Nav.Link>
             <Nav.Link className={styles.link} href="/students">Sua Sessão</Nav.Link>
             <Nav.Link className={styles.link} href="/students">Filmes</Nav.Link>
-            
+     <button style={{  backgroundColor: '#fdff00', border: 'none', borderRadius: '20px', cursor: 'pointer' }} className='btnMenu' >  <Nav.Link style={{color:'black'}} className={styles.link} href="/MenuCardapio"><span style={{color:'black'}} >Contato</span></Nav.Link></button>     
+
           </Nav>
         </Navbar.Collapse>
       </Container>
